@@ -1,0 +1,25 @@
+.portrait {
+  min-width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.material-icons {
+  vertical-align: bottom;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.arrow {
+  .material-icons {
+    transition: all .3s;
+  }
+}
+
+.arrow[aria-expanded="true"] {
+  .material-icons {
+    transform: rotate(180deg);
+  }
+}

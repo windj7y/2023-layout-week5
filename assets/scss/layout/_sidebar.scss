@@ -1,0 +1,29 @@
+.sidebar {
+  width: 296px;
+  min-height: 100vh;
+
+  .nav-link {
+    border-left: 4px solid transparent;
+
+    &:hover {
+      border-color: $success;
+    }
+
+    &.active {
+      color: $success;
+      border-color: $success;
+    }
+  }
+}
+
+.logo {
+  background: url(../images/logo-ANSWER.svg);
+  width: 151px;
+  height: 40px;
+
+  @include picture-replace;
+}
+
+.main {
+  width: calc(100% - 296px);
+}
